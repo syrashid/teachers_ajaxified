@@ -32,6 +32,9 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
 
+# Allows turbolink to render html for rendering forms with errors
+gem 'turbolinks_render'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
