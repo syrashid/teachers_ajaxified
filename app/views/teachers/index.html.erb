@@ -1,23 +1,11 @@
-<h1>Teachers</h1>
+<div class="container">
+  <h1>Teachers</h1>
 
-<ul>
-  <% @teachers.each do |teacher| %>
-    <li><%= link_to teacher.name, teacher_path(teacher) %></li>
-  <% end %>
-</ul>
-
-<!-- app/views/restaurants/show.html.erb -->
-<h1><%= @teacher.name %> <small><%= @teacher.address %></small></h1>
-<h2>
-  <%= pluralize @teacher.reviews.size, "review" %>
-</h2>
-
-<div id="reviews">
-  <% if @teacher.reviews.blank? %>
-    Be the first to leave a review for <%= @teacher.name %>
-  <% else %>
-    <% @teacher.reviews.each do |review| %>
-      <p><%= review.content %></p>
+  <ul>
+    <% @teachers.each do |teacher| %>
+      <li><%= link_to teacher.name, teacher_path(teacher) %></li>
     <% end %>
-  <% end %>
+  </ul>
 </div>
+
+
