@@ -13,5 +13,10 @@
       <% end %>
     <% end %>
   </div>
+
+  <%= simple_form_for([ @teacher, @review ]) do |f| %>
+    <%= f.input :content, as: :text %>
+    <%= f.button :submit %>
+  <% end %>
 </div>
 
