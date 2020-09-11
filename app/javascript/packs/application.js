@@ -33,4 +33,6 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
 });
 
+
+// Remember when you add stimulus, it adds this line and a controllers folder
 import "controllers"
